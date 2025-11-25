@@ -4,11 +4,11 @@ Express.js backend API with Clerk authentication and Swagger UI documentation.
 
 ## Features
 
-- 🔐 Clerk authentication integration
-- 📚 Swagger UI API documentation
-- 🚀 Express.js REST API
-- 📱 Support for email and phone number authentication
-- 🔒 Protected routes with authentication middleware
+-  Clerk authentication integration
+-  Swagger UI API documentation
+-  Express.js REST API
+-  Support for email and phone number authentication
+-  Protected routes with authentication middleware
 
 ## Prerequisites
 
