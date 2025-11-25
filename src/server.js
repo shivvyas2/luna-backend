@@ -5,6 +5,7 @@ import { clerkMiddleware } from '@clerk/express';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
 import authRoutes from './routes/auth.js';
+import recommendationRoutes from './routes/recommendation.js';
 
 // Load environment variables
 dotenv.config();
@@ -67,6 +68,7 @@ app.get('/health', (req, res) => {
 
 // API routes
 app.use('/api/auth', authRoutes);
+app.use('/api/recommendation', recommendationRoutes);
 
 // 404 handler
 app.use((req, res) => {

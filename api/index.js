@@ -4,6 +4,7 @@ import { clerkMiddleware } from '@clerk/express';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
 import authRoutes from '../src/routes/auth.js';
+import recommendationRoutes from '../src/routes/recommendation.js';
 
 const app = express();
 
@@ -64,6 +65,7 @@ app.get('/health', (req, res) => {
 
 // API routes
 app.use('/api/auth', authRoutes);
+app.use('/api/recommendation', recommendationRoutes);
 
 // 404 handler
 app.use((req, res) => {
